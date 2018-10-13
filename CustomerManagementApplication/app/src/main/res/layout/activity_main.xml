@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/button_addData"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Add Data"
+        app:layout_constraintBottom_toTopOf="@+id/button_deleteData"
+        app:layout_constraintEnd_toStartOf="@+id/button_updateData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_viewAllData"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="277dp"
+        android:layout_marginEnd="16dp"
+        android:text="View All Data"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_deleteData"
+        app:layout_constraintTop_toBottomOf="@+id/button_updateData" />
+
+    <Button
+        android:id="@+id/button_updateData"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Update Data"
+        app:layout_constraintBottom_toTopOf="@+id/button_viewAllData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_addData"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_deleteData"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="277dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="16dp"
+        android:text="Delete Data"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_viewAllData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_addData" />
+</android.support.constraint.ConstraintLayout>
